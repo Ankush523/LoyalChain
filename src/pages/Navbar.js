@@ -4,7 +4,7 @@ import './Navbar.css'
 function Navbar() {
     return ( 
         <div className='nav' >
-            <label className='brand'>LoyalChain</label>
+            <a href='/'><label className='brand' >LoyalChain</label></a>
         </div>
      );
 }
