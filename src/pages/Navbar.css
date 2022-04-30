@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+.nav{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(78, 33, 121);
+    color: white;
+    box-shadow: 5px 10px 10px 10px #5a5a5a;
+    flex-direction: row;
+    align-items: center;
+}
+
+.brand{
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 8vw;
+    font-size: calc( 8px + 2vmax);
+    font-weight: 800;
+}

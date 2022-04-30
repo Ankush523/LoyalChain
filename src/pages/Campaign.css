@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+.title{
+    font-size: calc( 8px + 2vmax);
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 8vw;
+}
+
+.subtitle{
+    font-size: calc( 8px + 1vmax);
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 8vw;
+}
+
+.cardbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    margin-bottom: 5vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: calc(320px + 2vw);
+    height: fit-content;
+    padding: 20px;
+    background-color: #432a5a;
+    color: aliceblue;
+    border-radius: 10px;
+    border-color: #c8b1dd;
+    border-width: 2px;
+    border-style: solid;   
+    margin-right: 30px;
+    margin-top: 30px; 
+}
+
+.cardtitle{
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(11px + 1vmax); 
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.cardsubtitle{
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(10px + 1vmin);
+}
