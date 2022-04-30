@@ -9,6 +9,16 @@
     padding-top: 8vh;
 }
 
+.icons{
+    font-size: calc(15px + 1vmax);
+    padding-top: 10px;
+}
+
+.a {
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
 .title{
     font-size: calc( 8px + 2vmax);
     font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,6 +38,7 @@
     margin-right: 8vw;
     margin-left: 8vw;
     margin-bottom: 5vh;
+    text-decoration: none;
 }
 
 .card{

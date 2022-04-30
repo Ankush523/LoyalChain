@@ -3,6 +3,7 @@ import './Campaign.css'
 import gift from '../gift.svg'
 import prize from '../prize.svg'
 import coupon from '../coupon.svg'
+import {BsArrowRightShort} from 'react-icons/bs'
 
 function Campaign() {
     return ( 
@@ -12,7 +13,7 @@ function Campaign() {
             <div className='cardbox'>
                 <div className='card' >
                     <img src={gift} width="70px"/>
-                    <label className='cardtitle'>Buy many, get one free</label>
+                    <label className='cardtitle'>Buy many, get one free </label>
                     <label className='cardsubtitle'>The classic coffee stand reward. Treat your repeat customers with a gift.</label>
                 </div>
                 <div className='card' >

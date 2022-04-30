@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #211031;
+    color: aliceblue;
+    padding-top: 8vh;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
+.title{
+    font-size: calc( 8px + 2vmax);
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 8vw;
+}
+
+.subtitle{
+    font-size: calc( 8px + 1vmax);
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 8vw;
+}
+
+#darktext{
+    color: #ae9dbd;
+}
+
+.icon{
+    font-size: calc(4px + 1vmax);
+}
+
+.inputbox{
+    width: calc(250px + 1vw);
+    margin-left: 8vw;
+    margin-top: 5px;
+    border-style: none;
+    background-color: #42344e;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    border-radius: 20px;
+    font-size: calc(8px + 1vmin);
+}
+
+.inputbox:focus{
+    outline: none;
+}

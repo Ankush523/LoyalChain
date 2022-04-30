@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage';
 import Navbar from './pages/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Campaign from './pages/Campaign';
+import Buyget from './components/Buyget';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route path='/Campaign' element={<Campaign/>}/>
+        <Route path='/BuyGet' element={<Buyget/>}/>
       </Routes>
     </BrowserRouter>
   );
