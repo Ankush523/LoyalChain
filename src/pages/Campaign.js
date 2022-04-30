@@ -1,12 +1,11 @@
 import React from 'react';
-import './Homepage.css'
 import './Campaign.css'
 import gift from '../gift.svg'
 import prize from '../prize.svg'
 
 function Campaign() {
     return ( 
-        <div className='main'>
+        <div className='cmain'>
             <label className='title'>Choose a rewards program</label>
             <label className='subtitle'>Pick from one of our templates</label>
             <div className='cardbox'>

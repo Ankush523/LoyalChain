@@ -3,7 +3,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     background-color: #32184b;
     color: aliceblue;
     padding-top: 8vh;
@@ -41,7 +41,6 @@
     background: #ffffff;
     margin-left: 8vw;
     cursor: pointer;
-    margin-bottom: 4vh;
    }
    
    .startbtn:hover {

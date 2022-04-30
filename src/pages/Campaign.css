@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
+.cmain{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #32184b;
+    color: aliceblue;
+    padding-top: 8vh;
+}
 
 .title{
     font-size: calc( 8px + 2vmax);
