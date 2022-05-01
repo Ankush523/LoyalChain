@@ -20,7 +20,7 @@ function Campaign() {
                     <img src={prize} width="70px"/>
                     <label className='cardtitle'>Points program</label>
                     <label className='cardsubtitle'>Reward loyal customers with points for each purchase. You can add more prizes over time, and based on the level of loyalty.</label>
-                    <a href='/Campaign/BuyGet'><button className='setbtn'>Set up</button></a>
+                    <a href='/Campaign/Points'><button className='setbtn'>Set up</button></a>
                 </div>
                 <div className='card' >
                     <img src={coupon} width="80px"/>

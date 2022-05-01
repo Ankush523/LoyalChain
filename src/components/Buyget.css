@@ -114,3 +114,23 @@ a {
        border-style: solid;
        border-color: #9785a7;
    }
+
+   #points{
+       width: calc(80px + 1vw) !important;
+   }
+
+   .example{
+    width: calc(100px + 35vw);
+    height: calc(50px + 2vh);
+    margin-top: 5px;
+    border-style: none;
+    background-color: #42344e;
+    color: #ffffff;
+    padding-top: 15px;
+    margin-left: 8vw;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: calc(8px + 1vmin);
+   }
