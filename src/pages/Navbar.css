@@ -3,7 +3,7 @@
 .nav{
     display: flex;
     height: 10vh;
-    background-color: rgb(78, 33, 121);
+    background-color: rgb(53, 15, 88);
     color: white;
     box-shadow: 5px 10px 10px 10px #5a5a5a;
     flex-direction: row;

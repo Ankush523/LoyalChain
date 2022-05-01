@@ -31,6 +31,13 @@
     padding-left: 8vw;
 }
 
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
 .cardbox{
     display: flex;
     flex-direction: row;
@@ -72,3 +79,24 @@
     font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: calc(10px + 1vmin);
 }
+
+.setbtn {
+    background-color: #dac1f0;
+    border: 1px solid #42344e;
+    padding: 8px 18px;
+    border-radius: 15px;
+    margin-top: 1vh;
+    transition: .3s;
+    color: #211031;
+    font-weight: bold;
+   }
+   
+   .setbtn:hover {
+    border: 1px solid #42344e;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c8b1dd;
+    cursor: pointer;
+   }

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Homepage from './pages/Homepage';
 import Navbar from './pages/Navbar';
@@ -13,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>} />
         <Route path='/Campaign' element={<Campaign/>}/>
-        <Route path='/BuyGet' element={<Buyget/>}/>
+        <Route path='/Campaign/BuyGet' element={<Buyget/>}/>
       </Routes>
     </BrowserRouter>
   );
