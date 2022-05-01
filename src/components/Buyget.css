@@ -121,7 +121,7 @@ a {
 
    .example{
     width: calc(100px + 35vw);
-    height: calc(50px + 2vh);
+    height: fit-content;
     margin-top: 5px;
     border-style: none;
     background-color: #42344e;
@@ -133,4 +133,10 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     font-size: calc(8px + 1vmin);
+   }
+
+   .extitle{
+    font-size: calc( 6px + 1vmax);
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
    }

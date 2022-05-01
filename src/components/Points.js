@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Buyget.css'
 import {BsChevronLeft} from "react-icons/bs"
+import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 
 function Points() {
     const[reward,setReward]=useState('');
@@ -22,7 +23,7 @@ function Points() {
                     <input className='smallinput' placeholder='x10000' onChange={e => setPoint(e.target.value)} ></input>
                </div>
             </div>
-            <label className='example' >If a customer spends 100 USDC, they will get {reward * point} points which is redeemable for 5 USDC</label>
+            <label className='example' ><span className='extitle' >Example<br/></span>If a customer spends 100 MATIC, they will get {reward * point} points which is redeemable for {reward * point / 100} MATIC</label>
             <a><button className='buybtn'>Start Program</button></a>
         </div>
      );
