@@ -8,8 +8,8 @@ contract PointProgram{
 
     struct Point{
         string name;
-        uint reward;
-        uint multiplier;
+        string reward;
+        string multiplier;
     }
 
     struct Enroll{
@@ -20,7 +20,7 @@ contract PointProgram{
     mapping(address => Point[]) points;
     mapping(address => Enroll[]) enrolls;
 
-    function addPoint(string memory _name, uint _reward, uint _multiplier) public returns(Point[] memory){
+    function addPoint(string memory _name, string memory _reward, string memory _multiplier) public returns(Point[] memory){
         owner=msg.sender;
         Point memory temp = Point(_name, _reward, _multiplier);
         points[owner].push(temp);
