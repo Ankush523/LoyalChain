@@ -140,3 +140,17 @@ a {
     font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 10px;
    }
+
+   .display{
+    width: calc(50px + 1vw);
+    border-style: none;
+    background-color: #42344e;
+    color: #ffffff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: calc(3px + 1vmax);
+    text-align: center;
+}
