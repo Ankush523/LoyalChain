@@ -154,3 +154,20 @@ a {
     font-size: calc(3px + 1vmax);
     text-align: center;
 }
+
+.prginput{
+    width: calc(250px + 1vw);
+    margin-top: 5px;
+    border-style: none;
+    background-color: #42344e;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    border-radius: 40px;
+    font-size: calc(8px + 1vmin);
+}
+
+.prginput:focus{
+    outline: none;
+}
