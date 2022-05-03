@@ -4,6 +4,7 @@ import { ethers } from 'ethers';
 import {BsChevronLeft} from "react-icons/bs"
 import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 import useProvider from '../hooks/useProvider';
+import useContract from '../hooks/useContract';
 
 function Points() {
     const[reward,setReward]=useState('');
@@ -11,6 +12,7 @@ function Points() {
     const[currentAccount,setcurrentAccount]=useState('');
     const[balance,setBalance]=useState('');
     const provider=useProvider();
+    const Pointcontract = useContract('PointProgram');
 
     useEffect(() => {  
      window.ethereum.request({ method: 'eth_requestAccounts' })
