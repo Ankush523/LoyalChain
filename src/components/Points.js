@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Buyget.css'
 import { ethers } from 'ethers';
 import {BsChevronLeft} from "react-icons/bs"
-import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 import useProvider from '../hooks/useProvider';
 import useContract from '../hooks/useContract';
 
@@ -11,6 +10,7 @@ function Points() {
     const[point,setPoint]=useState('');
     const[currentAccount,setcurrentAccount]=useState('');
     const[balance,setBalance]=useState('');
+    const[pointList,setPointList]=useState([]);
     const provider=useProvider();
     const Pointcontract = useContract('PointProgram');
 
@@ -24,9 +24,17 @@ function Points() {
             .then(setBalance);
 
         });  
-    }, [])
+    }, []);
 
     const acc = currentAccount.substring(0,5)+'...'+currentAccount.substring(39,42);
+
+    const showPoint = async() =>{
+        await Pointcontract.getPoint().then(console.log);
+    }
+
+    const addPoints = () =>{
+        Pointcontract.addPoint('abc',reward,point);
+    }
 
 
     return ( 
@@ -48,6 +56,8 @@ function Points() {
             </div>
             <label className='example' ><span className='extitle' >Example<br/></span>If a customer spends 100 MATIC, they will get {reward * point} points which is redeemable for {reward * point / 100} MATIC</label>
             <a><button className='buybtn'>Start Program</button></a>
+            <button onClick={showPoint}>Show Point</button>
+            <button onClick={addPoints} >Add Point</button>
         </div>
      );
 }
