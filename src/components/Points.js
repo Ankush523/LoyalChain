@@ -23,6 +23,8 @@ function Points() {
           provider.getBalance(result[0])
             .then(ethers.utils.formatEther)
             .then(setBalance);
+        Pointcontract.getPoint().then(setPointList);
+        Pointcontract.getPoint().then(console.log);
 
         });  
     }, []);
@@ -61,6 +63,28 @@ function Points() {
             </div>
             <label className='example' ><span className='extitle' >Explanation <br/></span>If a customer spends 1 MATIC, they will get {reward * point} points which is redeemable for {reward * point / 100} MATIC</label>
             <a><button onClick={addPoints} className='buybtn'>Start Program</button></a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program Name</th>
+                        <th>Rewards</th>
+                        <th>Points Multiplier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {pointList.map((points,key)=>{
+                        return(
+                            <tr key={key}>
+                                <td>{points.name}</td>
+                                <td>{points.reward}</td>
+                                <td>{points.multiplier}</td>
+                            </tr>
+                        )
+                    })
+
+                    }
+                </tbody>
+            </table>
         </div>
      );
 }
