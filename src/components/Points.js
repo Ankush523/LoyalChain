@@ -2,9 +2,17 @@ import React, { useState, useEffect } from 'react';
 import './Buyget.css'
 import './Ponts.css'
 import { ethers } from 'ethers';
-import {BsChevronLeft} from "react-icons/bs"
+import {BsChevronLeft, BsFileArrowDown} from "react-icons/bs"
+import {FaChevronDown} from 'react-icons/fa'
 import useProvider from '../hooks/useProvider';
 import useContract from '../hooks/useContract';
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
 
 function Points() {
     const[reward,setReward]=useState('');
@@ -66,29 +74,75 @@ function Points() {
             <a><button onClick={addPoints} className='buybtn'>Start Program</button></a>
             <br/>
             <br/>
-            <label className='title'>Active Programs</label>
-            <table className='pointslist'>
-                <thead>
-                    <tr>
-                        <th>Program Name</th>
-                        <th>Rewards</th>
-                        <th>Points Multiplier</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {pointList.map((points,key)=>{
-                        return(
-                            <tr key={key}>
-                                <td>{points.name}</td>
-                                <td>{points.reward}</td>
-                                <td>{points.multiplier}</td>
+            <label className='title' >Program Details</label>
+            <Accordion allowZeroExpanded={true}>
+            <AccordionItem >
+                <AccordionItemHeading >
+                    <AccordionItemButton className='accord'>
+                        <span><label className='accordicon'><FaChevronDown/></label> Active Programs</span>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <br/>
+                        <table className='pointslist'>
+                        <thead>
+                            <tr>
+                                <th>Program Name</th>
+                                <th>Rewards</th>
+                                <th>Points Multiplier</th>
                             </tr>
-                        )
-                    })
+                        </thead>
+                        <tbody>
+                            {pointList.map((points,key)=>{
+                                return(
+                                    <tr key={key}>
+                                        <td>{points.name}</td>
+                                        <td>{points.reward}</td>
+                                        <td>{points.multiplier}</td>
+                                    </tr>
+                                )
+                            })
 
-                    }
-                </tbody>
-            </table>
+                            }
+                        </tbody>
+                    </table>
+                    <br/>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton className='accord'>
+                        <label><FaChevronDown/> Current Members</label>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                <br/>
+                        <table className='pointslist'>
+                        <thead>
+                            <tr>
+                                <th>Program Name</th>
+                                <th>Rewards</th>
+                                <th>Points Multiplier</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {pointList.map((points,key)=>{
+                                return(
+                                    <tr key={key}>
+                                        <td>{points.name}</td>
+                                        <td>{points.reward}</td>
+                                        <td>{points.multiplier}</td>
+                                    </tr>
+                                )
+                            })
+
+                            }
+                        </tbody>
+                    </table>
+                    <br/>
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
         </div>
      );
 }

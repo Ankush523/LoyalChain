@@ -4,9 +4,9 @@
     font-size: calc(4px + 1vmax);
     font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-collapse: collapse;
-    width: calc(80vw);
+    width: calc(75vw);
     text-align: center;
-    margin-left: 8vw;
+    margin-left: 10vw;
     border-radius: 10px;
     margin-bottom: 5vh;
   }
@@ -31,4 +31,23 @@
     text-align: center;
     background-color: #381e50;
     color: white;
+  }
+
+  .accord{
+      font-size: calc(8px + 1vmax);
+      font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #381e50;
+      justify-content: center;
+      width: calc(75vw);
+      padding-left: 5vw;
+      margin-left: 8vw;
+      height: calc(50px + 2vh);
+      border-radius: 20px;
+      margin-bottom: 3vh;
+  }
+
+  .accord:hover{
+      cursor: pointer;
   }

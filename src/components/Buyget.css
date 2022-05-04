@@ -12,6 +12,8 @@
 a {
     text-decoration: none !important;
     cursor: pointer;
+    width: fit-content;
+    height: fit-content;
   }
 
 .title{
