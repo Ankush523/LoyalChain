@@ -3,7 +3,7 @@
 .main{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     background-color: #211031;
     color: aliceblue;
     padding-top: 8vh;

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+.pointslist {
+    font-size: calc(4px + 1vmax);
+    font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: calc(80vw);
+    text-align: center;
+    margin-left: 8vw;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+  }
+  
+  .pointslist td, .pointslist th {
+    padding: 8px;
+  }
+  
+  .pointslist tr:nth-child(even){background-color: #422c55;}
+
+  .pointslist th:nth-child(1){
+    border-top-left-radius: 15px;
+  }
+  
+  .pointslist th:nth-child(3){
+      border-top-right-radius: 15px;
+  }
+  
+  .pointslist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #381e50;
+    color: white;
+  }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Buyget.css'
+import './Ponts.css'
 import { ethers } from 'ethers';
 import {BsChevronLeft} from "react-icons/bs"
 import useProvider from '../hooks/useProvider';
@@ -63,7 +64,10 @@ function Points() {
             </div>
             <label className='example' ><span className='extitle' >Explanation <br/></span>If a customer spends 1 MATIC, they will get {reward * point} points which is redeemable for {reward * point / 100} MATIC</label>
             <a><button onClick={addPoints} className='buybtn'>Start Program</button></a>
-            <table>
+            <br/>
+            <br/>
+            <label className='title'>Active Programs</label>
+            <table className='pointslist'>
                 <thead>
                     <tr>
                         <th>Program Name</th>
