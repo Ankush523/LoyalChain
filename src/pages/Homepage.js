@@ -4,7 +4,7 @@ import './Homepage.css'
 function Homepage() {
     return ( 
         <div className='main' >
-            <label className='header' >Reward <br/>OnChain Loyalty</label>
+            <label className='header' >Reward <br/> For OnChain Loyalty</label>
             <br/>
             <br/>
             <label className='subhead' >Reward your brand’s biggest fans, <br/> wherever they shop. </label>

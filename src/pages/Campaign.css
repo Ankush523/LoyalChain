@@ -10,7 +10,7 @@
 }
 
 .icons{
-    font-size: calc(15px + 1vmax);
+    font-size: calc(10px + 1vmax);
     padding-top: 10px;
 }
 
@@ -20,13 +20,13 @@
   }
 
 .title{
-    font-size: calc( 8px + 2vmax);
+    font-size: calc( 6px + 2vmax);
     font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 8vw;
 }
 
 .subtitle{
-    font-size: calc( 8px + 1vmax);
+    font-size: calc( 6px + 1vmax);
     font-family: 'Kanit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 8vw;
 }
@@ -56,7 +56,7 @@
     padding: 20px;
     background-color: #432a5a;
     color: aliceblue;
-    border-radius: 10px;
+    border-radius: 9px;
     border-color: #c8b1dd;
     border-width: 2px;
     border-style: solid;   
