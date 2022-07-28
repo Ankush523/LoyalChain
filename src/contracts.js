@@ -1,7 +1,7 @@
-import PointProgramABI from './smart_contracts/artifacts/contracts/PointProgram.sol/PointProgram.json'
+import PointProgramABI from './smart_contracts/contracts/PointProgram.json'
 
 const contracts = {
-  'PointProgram': { abi: PointProgramABI.abi, address: '0xb47de4E6e4d08CAAf66e7CA60a0f1bE985F82dF0' }
+  'PointProgram': { abi: PointProgramABI.abi, address: '00x3D8ea26f2A2A3d30f01c67901A54B3770ABF154F' }
 };
 
 export default contracts

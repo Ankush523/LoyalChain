@@ -1,0 +1,139 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_creator",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_purchase",
+				"type": "uint256"
+			}
+		],
+		"name": "addEnroll",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "member",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "purchase",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct PointProgram.Enroll[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_reward",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_multiplier",
+				"type": "string"
+			}
+		],
+		"name": "addPoint",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reward",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "multiplier",
+						"type": "string"
+					}
+				],
+				"internalType": "struct PointProgram.Point[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getEnroll",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "member",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "purchase",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct PointProgram.Enroll[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getPoint",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reward",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "multiplier",
+						"type": "string"
+					}
+				],
+				"internalType": "struct PointProgram.Point[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
